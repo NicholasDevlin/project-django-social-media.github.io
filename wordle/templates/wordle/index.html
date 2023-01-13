@@ -1,0 +1,35 @@
+{% extends "wordle/layout.html" %}
+
+{% block body %}
+
+<div id="container">
+  <div class="row">
+    {% for posting in allPosting %}
+    <div class="col-sm-6 ">
+
+      <div class="card">
+
+        <div class="card-body ">
+          <a href="#">@{{ posting.writer }}</a>
+
+          <h5 class="card-title">
+            {{ posting.title }}
+          </h5>
+          <p class="card-text">
+            {{ posting.words }}
+          </p>
+          <a href="{% url 'posting' id=posting.id %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="newPost">
+
+    <a class="btn btn-newPost" href="{% url 'newPost' %}">New Post</a>
+
+  </div>
+  {% endblock %}

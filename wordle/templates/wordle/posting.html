@@ -1,0 +1,15 @@
+{% extends "wordle/layout.html" %}
+
+{% block body %}
+
+<div class="posting">
+    <a class="writer" href="#">@{{ posting.writer }}</a>
+    <h5>{{ posting.title }}</h5>
+    <p>{{ posting.words }}</p>
+    <p class="reference">-{{ posting.reference }}</p>
+</div>
+
+
+
+
+{% endblock %}

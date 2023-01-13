@@ -1,0 +1,24 @@
+{% extends "wordle/layout.html" %}
+
+{% block body %}
+<div class="form-newPost">
+    <form action="{% url 'newPost' %}" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="Title">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Reference</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="reference"
+                placeholder="Reference">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Status" name="status"
+                rows="3"></textarea>
+        </div>
+        <button class="btn btn-secondary px-4" type="submit">Post</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "wordle/loginLayout.html" %}
+
+{% block body %}
+
+{% if message %}
+<div>{{ message }}</div>
+{% endif %}
+
+<div class="container">
+  <div class="sign-form">
+    <form action="{% url 'register' %}" method="post">
+      {% csrf_token %}
+      <h3 class="form-header">Register</h3>
+      <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
+      <input type="text" name="username" class="form-control" placeholder="Username">
+
+      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+      <input type="text" name="email" class="form-control" placeholder="Email">
+
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+
+      <label for="inputConfirmPassword" class=" col-form-label">Confirm Password</label>
+      <input type="password" name="confirmPassword" class="form-control" id="inputConfirmPassword"
+        placeholder="Confirm Password">
+
+      <div class="register-login">
+        <a href="{% url 'login' %}">Login</a>
+        <button class="btn btn-primary" type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

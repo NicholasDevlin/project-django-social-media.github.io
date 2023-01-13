@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: rgb(67, 67, 67);
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-expand-lg {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(30px) saturate(100%) contrast(100%) brightness(50%);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: solid 1px #000;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.row {
+  margin: 10px;
+  padding: 5px;
+}
+
+.card {
+  margin-top: 10px;
+}
+
+.navbar-brand:hover {
+  color: rgb(192, 192, 192);
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgb(192, 192, 192);
+}
+
+.btn-search {
+  background-color: rgb(67, 67, 67);
+  outline: solid 2px #fff;
+  border-radius: 20px;
+  padding: 3px 20px;
+  color: white;
+}
+
+.btn-newPost {
+  background-color: rgb(67, 67, 67);
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 10px 25px 10px 25px;
+  border: solid 2px rgb(255, 255, 255);
+  color: white;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right
+}
+
+.newPost {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+}
+
+.btn:hover {
+  color: rgb(192, 192, 192);
+  outline: solid 3px rgb(192, 192, 192);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-form {
+  margin-top: 20%;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  min-width: 280px;
+}
+
+.sign-form form {
+  min-width: 280px;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 20px;
+  margin: 0px 20px 0px 20px;
+}
+
+.register-login {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.sign-form .form-header {
+  text-align: center;
+  opacity: 80%;
+}
+
+.register-login a {
+  text-decoration: none;
+}
+
+label {
+  color: white;
+}
+
+.form-newPost {
+  padding: 3% 10% 10%;
+}
+
+.posting {
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  margin: 1%;
+  border-radius: 5px;
+}
+
+.writer {
+  text-transform: capitalize;
+  position: absolute;
+  top: 6px;
+  text-decoration: none;
+}
+
+.posting h5 {
+  padding-top: 20px;
+}
+
+.reference {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
